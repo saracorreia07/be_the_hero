@@ -45,13 +45,13 @@ export default function Detail() {
             <View style={styles.incident}>
                 <Text style={[styles.incidentProperty, { marginTop: 0 }]}>ONG:</Text>
                 <Text style={styles.incidentValue}>
-                    {incident.name} de {incident.city}/{incident.uf}
+                    {incident.name}, city of {incident.city} - {incident.uf}
                 </Text>
 
-                <Text style={styles.incidentProperty}>CASO:</Text>
+                <Text style={styles.incidentProperty}>CASE:</Text>
                 <Text style={styles.incidentValue}>{incident.title}</Text>
 
-                <Text style={styles.incidentProperty}>VALOR:</Text>
+                <Text style={styles.incidentProperty}>VALUE:</Text>
                 <Text style={styles.incidentValue}>
                     {Intl.NumberFormat("pt-PT", {
                         style: "currency",
@@ -61,10 +61,10 @@ export default function Detail() {
             </View>
 
             <View style={styles.contactBox}>
-                <Text style={styles.heroTitle}>Salve o dia!</Text>
-                <Text style={styles.heroTitle}>Sê o herói desse caso.</Text>
+                <Text style={styles.heroTitle}>Save the day!</Text>
+                <Text style={styles.heroTitle}>Be this case's heroe.</Text>
 
-                <Text style={styles.heroDescription}>Entre em contacto:</Text>
+                <Text style={styles.heroDescription}>Reach out to us:</Text>
 
                 <View style={styles.actions}>
                     <TouchableOpacity style={styles.action} onPress={sendWhatsapp}>

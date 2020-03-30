@@ -56,7 +56,7 @@ export default function Incidents() {
             </View>
 
             <Text style={styles.title}>Welcome!</Text>
-            <Text style={styles.description}>Pick one the cases below and save someone's day!</Text>
+            <Text style={styles.description}>Pick one of the cases below and save someone's day!</Text>
 
             <FlatList
                 data={incidents}
@@ -73,7 +73,7 @@ export default function Incidents() {
                         <Text style={styles.incidentValue}>{incident.title}</Text>
 
                         <Text style={styles.incidentProperty}>VALUE:</Text>
-                        <Text style={styles.incidentValue}>{incident.value}>
+                        <Text style={styles.incidentValue}>
                         {Intl.NumberFormat('pt-PT', {
                             style: 'currency',
                             currency: 'EUR'
