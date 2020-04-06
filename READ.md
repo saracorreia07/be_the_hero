@@ -19,5 +19,13 @@ React
 React Native
 SQLite
 
+//Build the server
+
+Clone this project and run the command $ npm start on the project's folder to deploy into your local service. It should be configured for localhost:3333 - if not, please update project files.
+
+//Run the client side
+
+Run the command $ yarn start on the project's frontend folder, and it will open the http://localhost:3333 on your browser. 
+
 
 
